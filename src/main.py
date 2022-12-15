@@ -5,9 +5,8 @@ create a desktop app with a single CheckBox button to start SiafiWeb
 
 import sys
 from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, 
-                             QPushButton, QLineEdit, QCheckBox)
-from PyQt6.QtGui import QPixmap, QFont
-from PyQt6.QtCore import Qt
+                             QCheckBox)
+from driver import create_driver
 
 class MainWindow(QWidget):
     def __init__(self):
@@ -27,9 +26,11 @@ class MainWindow(QWidget):
         
         siafiweb_cb = QCheckBox('SiafiWeb', self)
         siafiweb_cb.move(40, 90)
-        #siafiweb_cb.connect()
+        siafiweb_cb.toggled.connect(self.siafiweb_driver)
 
-        
+    def siafiweb_driver(self, checked):
+        if checked:
+            self.siafiweb_driver = create_driver()
                     
     
         
