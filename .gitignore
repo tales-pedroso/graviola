@@ -5,3 +5,4 @@ pyvenv.cfg
 share/
 dependencies/
 src/__pycache__
+src/geckodriver.log
