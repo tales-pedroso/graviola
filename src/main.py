@@ -14,7 +14,7 @@ class MainWindow(QWidget):
         self.initializeUi()
         
     def initializeUi(self):
-        self.setGeometry(0, 0, 1980, 1020)
+        self.setGeometry(0, 0, 500, 400)
         self.setWindowTitle("Graviola")
         
         self.setUpMainWindow()
