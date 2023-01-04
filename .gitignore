@@ -6,3 +6,7 @@ share/
 dependencies/
 src/__pycache__
 src/geckodriver.log
+history.odt
+env_before_pip.yml
+conda_env_graviola/
+conda_env_graviola_with_pip/
